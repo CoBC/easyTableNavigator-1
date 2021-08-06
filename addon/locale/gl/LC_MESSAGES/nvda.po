@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the easyTableNavigator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: easyTableNavigator 2.1.1\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2021-07-22 06:33+0000\n"
+"PO-Revision-Date: 2021-08-03 18:52+0200\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Iván Novegil Cancelas <ivan.novegil.cancelas@gmail.com>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
+
+#. Translators: input help mode message for Table Navigator toggle command.
+msgid ""
+"Toggles table navigation layer on or off. When active, arrow keys can be "
+"used to navigate between cells"
+msgstr ""
+"Activa ou desactiva a capa de navegación por táboas. Cando está activa, as "
+"teclas de frechas poden utilizarse para navegar entre celas"
+
+#. Translators: command category for the add-on.
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Easy Table Navigator"
+msgstr "Easy Table Navigator"
+
+#. Translators: presented when a user is not in a table.
+msgid "Not in a table"
+msgstr "Non estás nunha táboa"
+
+#. Translators: presented when table navigator layer is on.
+msgid "Table navigator on"
+msgstr "Navegador de táboas activado"
+
+#. Translators: presented when table navigator layer is off.
+msgid "Table navigator off"
+msgstr "Navegador de táboas desactivado"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Allows using just arrow keys to navigate between table cells via a dedicated "
+"layer."
+msgstr ""
+"Permite utilizar só as teclas de frechas para navegar entre as celas das "
+"táboas a través dunha capa dedicada."
