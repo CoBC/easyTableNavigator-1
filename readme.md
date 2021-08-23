@@ -16,6 +16,11 @@ Currently supported tables are:
 
 * Toggles table navigator layer on and off (unassigned).
 
+## Changes for 2.2
+
+* Update documentation style from addons template
+* First translated version
+
 ## Changes for 2.1.1
 
 * New author in manifest and documentation

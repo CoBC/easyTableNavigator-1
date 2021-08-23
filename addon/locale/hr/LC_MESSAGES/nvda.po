@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the easyTableNavigator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: easyTableNavigator 2.1.1\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2021-07-22 06:33+0000\n"
+"PO-Revision-Date: 2021-07-27 17:33+0200\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
+
+#. Translators: input help mode message for Table Navigator toggle command.
+msgid ""
+"Toggles table navigation layer on or off. When active, arrow keys can be "
+"used to navigate between cells"
+msgstr ""
+"Uključuje i isključuje kretanje po tablici. Kad je aktivno, tipke strelica "
+"mogu se koristiti za kretanje po ćelijama"
+
+#. Translators: command category for the add-on.
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Easy Table Navigator"
+msgstr "Jednostavno kretanje po tablici"
+
+#. Translators: presented when a user is not in a table.
+msgid "Not in a table"
+msgstr "Nisi u tablici"
+
+#. Translators: presented when table navigator layer is on.
+msgid "Table navigator on"
+msgstr "Kretanje po tablici uključeno"
+
+#. Translators: presented when table navigator layer is off.
+msgid "Table navigator off"
+msgstr "Kretanje po tablici isključeno"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Allows using just arrow keys to navigate between table cells via a dedicated "
+"layer."
+msgstr "Dozvoli upotrebu tipki strelica za kretanje po ćelijama tablice."

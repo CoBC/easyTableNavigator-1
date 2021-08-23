@@ -1,9 +1,9 @@
-# Easy Table Navigator #
+# Lakša navigacija kroz tabele  #
 
-* Authors: Corentin Bacqué-Cazenave, Joseph Lee
-* Download [stable version][1]
-* Download [development version][2]
-* NVDA compatibility: 2019.3 to 2021.1
+* Autori: Corentin Bacqué-Cazenave, Joseph Lee
+* Preuzmi [stabilnu verziju ][1]
+* Preuzmi [verziju u razvoju ][2]
+* NVDA kompatibilnost: 2019.3 do 2021.1
 
 Ovaj dodatak dodaje prečicu kako biste išli kroz ćelije tabele koristeći
 strelice.
@@ -17,31 +17,31 @@ Trenutno podržane tabele su:
 
 * Uključuje ili isključuje navigator tabela(Nedodeljeno).
 
-## Changes for 2.1.1
+## Promene u 2.1.1
 
-* New author in manifest and documentation
+* Novi autor u manifestu i dokumentaciji
 
-## Changes for 2.1
+## Promene u 2.1
 
-* Compatibility with NVDA 2021.1
+* Kompatibilnost uz NVDA 2021.1
 
-## Changes for 2.0
+## Promene u 2.0
 
-* Requires NVDA 2019.3 or later.
-* Made various add-on messages translatable.
+* Zahteva NVDA 2019.3 ili noviji.
+* Razne poruke dodatka se sada mogu prevesti.
 
-## Changes for 1.2
+## Promene u 1.2
 
-* Internal changes to support future NVDA releases.
+* Interne promene za podršku budućih NVDA verzija.
 
 ## Promene u 1.1
 
 * Popravljen problem gde može doći do grešaka prilikom provere pravopisa u
-  outlooku
+  outlooku.
 
 ## Promene u 1.0
 
-*   Prva verzija
+*   Prva verzija.
 
 [[!tag dev stable]]
 
