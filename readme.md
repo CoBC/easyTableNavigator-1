@@ -16,6 +16,10 @@ Currently supported tables are:
 
 * Toggles table navigator layer on and off (unassigned).
 
+## Changes for 2.2.1
+
+* Fixed an error in some type of documents including Word and Outlook
+
 ## Changes for 2.2
 
 * Update documentation style from addons template
