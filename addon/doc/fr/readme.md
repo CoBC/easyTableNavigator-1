@@ -18,6 +18,16 @@ Les tableaux actuellement supportés son :
 * Basculer la couche du navigateur  de tableau entre activé et désactivé
   (non assignés).
 
+## Changements pour la version 2.2.1
+
+* Correction d'une erreur dans certains types de documents incluant Word et
+  Outlook
+
+## Changements pour la version 2.2
+
+* Mise à jour du style de la documentation à partir du modèle d'extensions
+* Première version traduite
+
 ## Changements pour la version 2.1.1
 
 * Nouvel auteur dans le manifest et la documentation

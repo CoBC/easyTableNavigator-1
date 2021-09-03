@@ -17,6 +17,15 @@ Derzeit unterstützte Tabellen sind:
 
 * Schaltet die Tabellennavigation ein und aus (nicht zugeordnet).
 
+## Changes for 2.2.1
+
+* Fixed an error in some type of documents including Word and Outlook
+
+## Changes for 2.2
+
+* Update documentation style from addons template
+* First translated version
+
 ## Änderungen in 2.1.1
 
 * Neuer Autor in Manifest und Dokumentation

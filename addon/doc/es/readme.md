@@ -17,6 +17,17 @@ Las tablas actualmente soportadas son:
 
 * Activa o desactiva la capa de navegador de tabla (sin asignar).
 
+## Cambios para 2.2.1
+
+* Corregido un error en algunos tipos de documentos, incluyendo Word y
+  Outlook
+
+## Cambios para 2.2
+
+* Actualizado el estilo de la documentación desde la plantilla de
+  complementos
+* Primera versión traducida
+
 ## Cambios para 2.1.1
 
 * Nuevo autor en el manifiesto y la documentación

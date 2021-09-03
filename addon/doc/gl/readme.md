@@ -17,6 +17,15 @@ As táboas actualmente soportadas son:
 
 * Activa ou desactiva a capa de navegador de táboa (sen asignar).
 
+## Changes for 2.2.1
+
+* Fixed an error in some type of documents including Word and Outlook
+
+## Changes for 2.2
+
+* Update documentation style from addons template
+* First translated version
+
 ## Cambios para 2.1.1
 
 * Novo autor no manifesto e a documentación

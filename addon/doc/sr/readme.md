@@ -17,6 +17,15 @@ Trenutno podržane tabele su:
 
 * Uključuje ili isključuje navigator tabela(Nedodeljeno).
 
+## Changes for 2.2.1
+
+* Fixed an error in some type of documents including Word and Outlook
+
+## Changes for 2.2
+
+* Update documentation style from addons template
+* First translated version
+
 ## Promene u 2.1.1
 
 * Novi autor u manifestu i dokumentaciji
