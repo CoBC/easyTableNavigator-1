@@ -16,14 +16,14 @@
 
 * 切换表格导航器图层（未指定）。
 
-## Changes for 2.2.1
+## 版本 2.2.1
 
-* Fixed an error in some type of documents including Word and Outlook
+* 修复了某些类型的文档（包括 Word 和 Outlook）中的错误
 
-## Changes for 2.2
+## 版本 2.2
 
-* Update documentation style from addons template
-* First translated version
+* 从插件模板更新文档样式
+* 首个翻译版本
 
 ## 版本 2.1.1
 

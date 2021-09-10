@@ -17,14 +17,15 @@ Taulukoita tuetaan tällä hetkellä:
 
 * Ottaa käyttöön tai poistaa käytöstä komentokerroksen (ei määritetty)
 
-## Changes for 2.2.1
+## Muutokset versiossa 2.2.1
 
-* Fixed an error in some type of documents including Word and Outlook
+* Korjattu virhe  määrätyn tyyppisissä asiakirjoissa, Word ja Outlook mukaan
+  lukien
 
-## Changes for 2.2
+## Muutokset versiossa 2.2
 
-* Update documentation style from addons template
-* First translated version
+* Dokumentaation tyyli päivitetty lisäosamallista
+* Ensimmäinen käännetty versio
 
 ## Muutokset versiossa 2.1.1
 
