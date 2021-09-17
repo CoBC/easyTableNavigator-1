@@ -1,4 +1,4 @@
-# Nem Tabelnavigation (Easy Table Navigator) #
+# Nem Tabelnavigation #
 
 * Forfattere: Corentin Bacqué-Cazenave, Joseph Lee
 * Download [stabil version][1]
