@@ -17,14 +17,14 @@ As táboas actualmente soportadas son:
 
 * Activa ou desactiva a capa de navegador de táboa (sen asignar).
 
-## Changes for 2.2.1
+## Cambios para 2.2.1
 
-* Fixed an error in some type of documents including Word and Outlook
+* Arranxado un erro nalgúns tipos de documentos incluídos Word e Outlook
 
-## Changes for 2.2
+## Cambios para 2.2
 
-* Update documentation style from addons template
-* First translated version
+* Actualizado estilo de documentación a partir do patrón de complementos
+* Primeira versión traducida
 
 ## Cambios para 2.1.1
 
