@@ -90,21 +90,21 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		category=_("Easy Table Navigator")
 	)
 	def script_toggleTableNav(self, gesture):
-		if not tableNavAvailable():
-			# Translators: presented when a user is not in a table.
-			ui.message(_("Not in a table"))
+		if not self.tableNav:
+			if not tableNavAvailable():
+				# Translators: presented when a user is not in a table.
+				ui.message(_("Not in a table"))
+				return
+			self.tableNav = True
+			self.bindTableNavGestures()
+			# Translators: presented when table navigator layer is on.
+			ui.message(_("Table navigator on"))
 		else:
-			if not self.tableNav:
-				self.tableNav = True
-				self.bindTableNavGestures()
-				# Translators: presented when table navigator layer is on.
-				ui.message(_("Table navigator on"))
-			else:
-				self.tableNav = False
-				self.clearGestureBindings()
-				self.bindGestures(self.__gestures)
-				# Translators: presented when table navigator layer is off.
-				ui.message(_("Table navigator off"))
+			self.tableNav = False
+			self.clearGestureBindings()
+			self.bindGestures(self.__gestures)
+			# Translators: presented when table navigator layer is off.
+			ui.message(_("Table navigator off"))
 
 	# Some utility functions.
 	def bindTableNavGestures(self):
