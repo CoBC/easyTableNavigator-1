@@ -17,14 +17,14 @@ As tabelas actualmente suportadas são:
 
 * Alternar a activação ou desactivação do extra (não atribuída).
 
-## Changes for 2.2.1
+## Alterações para 2.2.1
 
-* Fixed an error in some type of documents including Word and Outlook
+* Corrigido um erro em alguns tipos de documentos, incluindo Word e Outlook
 
-## Changes for 2.2
+## Mudanças para 2.2
 
-* Update documentation style from addons template
-* First translated version
+* Actualização do estilo de documentação a partir do modelo de addons
+* Primeira versão traduzida
 
 ## Alterações para 2.1.1
 
