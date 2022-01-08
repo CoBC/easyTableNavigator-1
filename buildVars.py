@@ -19,7 +19,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description" : _("""Allows using just arrow keys to navigate between table cells via a dedicated layer."""),
 	# version
-	"addon_version" : "2.2.1",
+	"addon_version" : "2.3",
 	# Author(s)
 	"addon_author" : u"Corentin Bacqué-Cazenave <corentin@progaccess.net>, Joseph Lee <joseph.lee22590@gmail.com>",
 	# URL for the add-on documentation support
@@ -29,7 +29,7 @@ addon_info = {
 	# Minimum NVDA version supported
 	"addon_minimumNVDAVersion" : "2019.3.0",
 	# Last NVDA version supported/tested
-	"addon_lastTestedNVDAVersion" : "2021.1.0",
+	"addon_lastTestedNVDAVersion" : "2022.1.0",
 	# Add-on update channel (default is stable)
 	"addon_updateChannel" : None,
 }

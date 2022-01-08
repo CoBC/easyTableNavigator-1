@@ -12,11 +12,13 @@ import config
 import virtualBuffers # For browse mode.
 from NVDAObjects.window import winword # Microsoft Word.
 import textInfos
+from . import compa
 import controlTypes
 import ui
 import scriptHandler
 import addonHandler
 addonHandler.initTranslation()
+controlTypes = compa.convertControlTypes(controlTypes)
 
 # Keep a tuple of candidate tree interceptors and object types handy.
 TNDocObjs=(
@@ -30,7 +32,7 @@ def _MSWordTableNavAvailable(document):
 	formatConfig=config.conf['documentFormatting'].copy()
 	formatConfig['reportTables']=True
 	commandList=info.getTextWithFields(formatConfig)
-	if len(commandList)<3 or commandList[1].field.get('role',None)!=controlTypes.ROLE_TABLE or commandList[2].field.get('role',None)!=controlTypes.ROLE_TABLECELL:
+	if len(commandList)<3 or commandList[1].field.get('role',None)!=controlTypes.Role.TABLE or commandList[2].field.get('role',None)!=controlTypes.Role.TABLECELL:
 		return False
 	rowCount=commandList[1].field.get('table-rowcount',1)
 	columnCount=commandList[1].field.get('table-columncount',1)
@@ -90,21 +92,21 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		category=_("Easy Table Navigator")
 	)
 	def script_toggleTableNav(self, gesture):
-		if not tableNavAvailable():
-			# Translators: presented when a user is not in a table.
-			ui.message(_("Not in a table"))
+		if not self.tableNav:
+			if not tableNavAvailable():
+				# Translators: presented when a user is not in a table.
+				ui.message(_("Not in a table"))
+				return
+			self.tableNav = True
+			self.bindTableNavGestures()
+			# Translators: presented when table navigator layer is on.
+			ui.message(_("Table navigator on"))
 		else:
-			if not self.tableNav:
-				self.tableNav = True
-				self.bindTableNavGestures()
-				# Translators: presented when table navigator layer is on.
-				ui.message(_("Table navigator on"))
-			else:
-				self.tableNav = False
-				self.clearGestureBindings()
-				self.bindGestures(self.__gestures)
-				# Translators: presented when table navigator layer is off.
-				ui.message(_("Table navigator off"))
+			self.tableNav = False
+			self.clearGestureBindings()
+			self.bindGestures(self.__gestures)
+			# Translators: presented when table navigator layer is off.
+			ui.message(_("Table navigator off"))
 
 	# Some utility functions.
 	def bindTableNavGestures(self):

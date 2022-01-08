@@ -3,7 +3,7 @@
 *   Authors: Corentin Bacqué-Cazenave, Joseph Lee
 * Download [stable version][1]
 * Download [development version][2]
-* NVDA compatibility: 2019.3 to 2021.1
+* NVDA compatibility: 2019.3 and beyond
 
 This plugin adds a layer command to use arrow keys to navigate table cells.
 
@@ -15,6 +15,11 @@ Currently supported tables are:
 ## Commands
 
 * Toggles table navigator layer on and off (unassigned).
+
+## Changes for 2.3
+
+* It is now possible to disable table navigation layer from everywhere
+* Compatibility with NVDA 2022.1
 
 ## Changes for 2.2.1
 
