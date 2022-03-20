@@ -2,4 +2,5 @@
 
 * It is now possible to disable table navigation layer from everywhere
 * Compatibility with NVDA 2022.1
+* Fix error when reloading the addon
 
