@@ -5,7 +5,7 @@
 * Télécharger [version de développement][2]
 * Compatibilité NVDA : 2019.3 à 2021.1
 
-Cette extension ajoute une couche de commandes pour utiliser les touches
+Cette extension ajoute des commandes séquentielles pour utiliser les touches
 fléchées pour naviguer dans les cellules d'un tableau.
 
 Les tableaux actuellement supportés son :
@@ -15,8 +15,8 @@ Les tableaux actuellement supportés son :
 
 ## Commandes
 
-* Basculer la couche du navigateur  de tableau entre activé et désactivé
-  (non assignés).
+* Active ou désactive les commandes séquentielles de navigation dans les
+  tableaux (non assignés).
 
 ## Changements pour la version 2.2.1
 

@@ -17,14 +17,14 @@ katman komutu ekler.
 
 * Tablo gezgini katmanını açar ve kapatır (atanmamış).
 
-## Changes for 2.2.1
+## 2.2.1 için Değişiklikler
 
-* Fixed an error in some type of documents including Word and Outlook
+* Word ve Outlook dahil bazı belge türlerindeki bir hata düzeltildi
 
-## Changes for 2.2
+## 2.2 için değişiklikler
 
-* Update documentation style from addons template
-* First translated version
+* Eklenti şablonundan belge stili güncellendi
+* İlk tercüme edilmiş sürüm
 
 ## 2.1.1 için Değişiklikler
 
