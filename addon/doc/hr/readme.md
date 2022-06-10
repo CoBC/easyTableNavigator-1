@@ -17,14 +17,15 @@ Trenutačno podržane tablice su:
 
 * Uključuje i isključuje kretanje po tablici (nedodijeljeno).
 
-## Changes for 2.2.1
+## Izmjene u verziji 2.2.1
 
-* Fixed an error in some type of documents including Word and Outlook
+* Ispravljena je greška u nekim vrstama dokumenata uključujući Word i
+  Outlook
 
-## Changes for 2.2
+## Izmjene u verziji 2.2
 
-* Update documentation style from addons template
-* First translated version
+* Aktualiziran je stil dokumentacije iz predloška dodataka
+* Prva prevedena verzija
 
 ## Izmjene u verziji 2.1.1
 
