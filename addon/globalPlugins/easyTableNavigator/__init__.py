@@ -1,7 +1,6 @@
-# This Python file uses the following encoding: utf-8
 # Easy Table Navigator
 # A global plugin for NvDA
-# Copyright 2015-2020 Joseph Lee, released under GPL
+# Copyright 2015-2022 Joseph Lee, Cyrille Bougot, released under GPL
 
 # Allows NVDA to navigate to next or previous column/row just by using arrow keys.
 # The results should be similar to table layer in JAWS.
@@ -9,8 +8,8 @@
 import globalPluginHandler
 import api
 import config
-import virtualBuffers # For browse mode.
-from NVDAObjects.window import winword # Microsoft Word.
+import documentBase
+from NVDAObjects.window import winword
 import textInfos
 from . import compa
 import controlTypes
@@ -27,12 +26,14 @@ TNDocObjs=(
 
 # For Microsoft Word: code from MS Word document object, pasted here for convenience.
 def _MSWordTableNavAvailable(document):
+	if hasattr(document, 'UIAAutomationId'):
+		return _MSWordUIATableNavAvailable(document)
 	info=document.makeTextInfo(textInfos.POSITION_CARET)
 	info.expand(textInfos.UNIT_CHARACTER)
 	formatConfig=config.conf['documentFormatting'].copy()
 	formatConfig['reportTables']=True
 	commandList=info.getTextWithFields(formatConfig)
-	if len(commandList)<3 or commandList[1].field.get('role',None)!=controlTypes.Role.TABLEBODY or commandList[2].field.get('role',None)!=controlTypes.Role.TABLECELL:
+	if len(commandList)<3 or commandList[1].field.get('role',None)!=controlTypes.Role.TABLE or commandList[2].field.get('role',None)!=controlTypes.Role.TABLECELL:
 		return False
 	rowCount=commandList[1].field.get('table-rowcount',1)
 	columnCount=commandList[1].field.get('table-columncount',1)
@@ -44,6 +45,13 @@ def _MSWordTableNavAvailable(document):
 		return False
 	return True
 
+def _MSWordUIATableNavAvailable(document):
+	try:
+		document._getTableCellCoords(document.selection)
+		return True
+	except LookupError:
+		return False
+
 # For docs, return the needed lookup function based on class name.
 # Placed here since Python complains that callable names cannot be found.
 TNDocObjTesters={
@@ -54,18 +62,21 @@ TNDocObjTesters={
 def tableNavAvailable(obj=None):
 	# Depending on object type, figure out if we're in a table.
 	focus = api.getFocusObject() if obj is None else obj
-	if focus.treeInterceptor and isinstance(focus.treeInterceptor, virtualBuffers.VirtualBuffer):
-		try:
-			focus.treeInterceptor._getTableCellCoords(focus.treeInterceptor.selection)
-			return True
-		except (LookupError, WindowsError):
-			return False
-	elif isinstance(focus, TNDocObjs):
+	if isinstance(focus, TNDocObjs):
 		try:
 			testFunc = TNDocObjTesters[focus.windowClassName]
 		except KeyError:
 			return False
 		return testFunc(focus)
+	elif (
+		isinstance(focus.treeInterceptor, documentBase.DocumentWithTableNavigation)
+		and not focus.treeInterceptor.passThrough
+	):
+		try:
+			focus.treeInterceptor._getTableCellCoords(focus.treeInterceptor.selection)
+			return True
+		except (LookupError, WindowsError):
+			return False
 	return False
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
@@ -116,21 +127,27 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.bindGesture("kb:uparrow", "prevRow")
 
 	# Table navigation commands.
+	
+	def tableNavigationHelper(self, gesture, move):
+		focus = api.getFocusObject()
+		if (
+			isinstance(focus.treeInterceptor, documentBase.DocumentWithTableNavigation)
+			and not focus.treeInterceptor.passThrough
+		):
+			getattr(focus.treeInterceptor, f'script_{move}')(gesture)
+		else:
+			getattr(focus, f'script_{move}')(gesture)
 
 	def script_nextRow(self, gesture):
-		focus = api.getFocusObject()
-		focus.treeInterceptor.script_nextRow(gesture) if isinstance(focus.treeInterceptor, virtualBuffers.VirtualBuffer) else focus.script_nextRow(gesture)
+		self.tableNavigationHelper(gesture, 'nextRow')
 
 	def script_prevRow(self, gesture):
-		focus = api.getFocusObject()
-		focus.treeInterceptor.script_previousRow(gesture) if isinstance(focus.treeInterceptor, virtualBuffers.VirtualBuffer) else focus.script_previousRow(gesture)
+		self.tableNavigationHelper(gesture, 'previousRow')
 
 	def script_nextColumn(self, gesture):
-		focus = api.getFocusObject()
-		focus.treeInterceptor.script_nextColumn(gesture) if isinstance(focus.treeInterceptor, virtualBuffers.VirtualBuffer) else focus.script_nextColumn(gesture)
+		self.tableNavigationHelper(gesture, 'nextColumn')
 
 	def script_prevColumn(self, gesture):
-		focus = api.getFocusObject()
-		focus.treeInterceptor.script_previousColumn(gesture) if isinstance(focus.treeInterceptor, virtualBuffers.VirtualBuffer) else focus.script_previousColumn(gesture)
+		self.tableNavigationHelper(gesture, 'previousColumn')
 
 	__gestures = {}
