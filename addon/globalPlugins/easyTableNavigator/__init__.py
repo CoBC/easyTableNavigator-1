@@ -125,6 +125,29 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.bindGesture("kb:leftarrow", "prevColumn")
 		self.bindGesture("kb:downarrow", "nextRow")
 		self.bindGesture("kb:uparrow", "prevRow")
+		if not hasattr(documentBase.DocumentWithTableNavigation, 'script_firstRow'):
+			# In NVDA 2022.2, table navigation commands to jump to first/last row/column have been added.
+			# For previous versions of NVDA not supporting them, just return here.
+			return
+		self.bindGesture("kb:control+rightarrow", "lastColumn")
+		self.bindGesture("kb:end", "lastColumn")
+		self.bindGesture("kb:control+leftarrow", "firstColumn")
+		self.bindGesture("kb:home", "firstColumn")
+		self.bindGesture("kb:control+downarrow", "lastRow")
+		self.bindGesture("kb:pageDown", "lastRow")
+		self.bindGesture("kb:control+uparrow", "firstRow")
+		self.bindGesture("kb:pageUp", "firstRow")
+		if not hasattr(documentBase.DocumentWithTableNavigation, 'script_speakRow'):
+			# In NVDA 2022.4, new table navigation commands have been added:
+			# read entire row/column and say all in row/column.
+			# For previous versions of NVDA not supporting them, just return here.
+			return
+		self.bindGesture("kb:NVDA+rightarrow", "sayAllRow")
+		self.bindGesture("kb:NVDA+downarrow", "sayAllColumn")
+		self.bindGesture("kb:NVDA+leftarrow", "speakRow")
+		self.bindGesture("kb:NVDA+uparrow", "speakColumn")
+		
+				
 
 	# Table navigation commands.
 	
@@ -149,5 +172,29 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_prevColumn(self, gesture):
 		self.tableNavigationHelper(gesture, 'previousColumn')
+	
+	def script_lastRow(self, gesture):
+		self.tableNavigationHelper(gesture, 'lastRow')
 
+	def script_firstRow(self, gesture):
+		self.tableNavigationHelper(gesture, 'firstRow')
+
+	def script_lastColumn(self, gesture):
+		self.tableNavigationHelper(gesture, 'lastColumn')
+
+	def script_firstColumn(self, gesture):
+		self.tableNavigationHelper(gesture, 'firstColumn')
+	
+	def script_sayAllRow(self, gesture):
+		self.tableNavigationHelper(gesture, 'sayAllRow')
+	
+	def script_sayAllColumn(self, gesture):
+		self.tableNavigationHelper(gesture, 'sayAllColumn')
+	
+	def script_speakRow(self, gesture):
+		self.tableNavigationHelper(gesture, 'speakRow')
+		
+	def script_speakColumn(self, gesture):
+		self.tableNavigationHelper(gesture, 'speakColumn')
+	
 	__gestures = {}
