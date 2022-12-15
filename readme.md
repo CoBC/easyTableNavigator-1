@@ -9,8 +9,8 @@ This plugin adds a layer command to use simplified key combination to navigate t
 When the layered commands are enabled, you can perform the following actions:
 - Navigate to the previous or next cell horizontally or vertically using arrow keys
 - Navigate to the first or last cell of the row or the column using control+arrow keys or Home, End, PageUp and PageDown
-- Read the whole row or column without moving the system caret using NVDA+leftArrow / NVDA+upArrow
-- Read the row or column starting from the current cell using NVDA+rightArrow / NVDA+downArrow
+- Read the whole row or column without moving the system caret using windows+leftArrow / windows+upArrow
+- Read the row or column starting from the current cell using windows+rightArrow / windows+downArrow
 
 Currently supported tables are:
 

@@ -142,10 +142,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# read entire row/column and say all in row/column.
 			# For previous versions of NVDA not supporting them, just return here.
 			return
-		self.bindGesture("kb:NVDA+rightarrow", "sayAllRow")
-		self.bindGesture("kb:NVDA+downarrow", "sayAllColumn")
-		self.bindGesture("kb:NVDA+leftarrow", "speakRow")
-		self.bindGesture("kb:NVDA+uparrow", "speakColumn")
+		self.bindGesture("kb:windows+rightarrow", "sayAllRow")
+		self.bindGesture("kb:windows+downarrow", "sayAllColumn")
+		self.bindGesture("kb:windows+leftarrow", "speakRow")
+		self.bindGesture("kb:windows+uparrow", "speakColumn")
 		
 				
 
