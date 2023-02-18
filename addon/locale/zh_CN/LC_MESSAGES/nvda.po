@@ -8,46 +8,42 @@ msgstr ""
 "Project-Id-Version: easyTableNavigator 2.1.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2021-07-22 06:33+0000\n"
-"PO-Revision-Date: 2021-11-07 18:14+0100\n"
-"Language: de\n"
+"PO-Revision-Date: 2022-02-16 00:34+0800\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Bernd Dorer <mail@bdorer.de>\n"
+"Last-Translator: \n"
 "Language-Team: \n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 2.4.3\n"
 
 #. Translators: input help mode message for Table Navigator toggle command.
 msgid ""
 "Toggles table navigation layer on or off. When active, arrow keys can be "
 "used to navigate between cells"
-msgstr ""
-"Schaltet den Tabellen-Navigator ein oder aus. Wenn aktiv, können die "
-"Pfeiltasten verwendet werden, um zwischen den Zellen zu navigieren"
+msgstr "开关简易导航模式（未分配），开启后，您可以使用四个光标键进行表格导航。"
 
 #. Translators: command category for the add-on.
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Easy Table Navigator"
-msgstr "Einfache Tabellen-Navigation"
+msgstr "简易表格导航器"
 
 #. Translators: presented when a user is not in a table.
 msgid "Not in a table"
-msgstr "Nicht in einer Tabelle"
+msgstr "不在表格的单元格中"
 
 #. Translators: presented when table navigator layer is on.
 msgid "Table navigator on"
-msgstr "Tabellen-Navigator eingeschaltet"
+msgstr "开启简易导航模式"
 
 #. Translators: presented when table navigator layer is off.
 msgid "Table navigator off"
-msgstr "Tabellen-Navigator ausgeschaltet"
+msgstr "关闭简易导航模式"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid ""
 "Allows using just arrow keys to navigate between table cells via a dedicated "
 "layer."
-msgstr ""
-"Ermöglicht das Navigieren zwischen Tabellenzellen über eine dedizierte Ebene "
-"nur mit den Pfeiltasten."
+msgstr "支持仅用四个光标键在表格中导航。"

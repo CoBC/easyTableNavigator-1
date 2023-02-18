@@ -1,4 +1,4 @@
-# Easy Table Navigator #
+# Einfache Tabellen-Navigation #
 
 * Autoren: Corentin Bacqué-Cazenave, Joseph Lee
 * [Stabile Version herunterladen][1]
@@ -17,6 +17,15 @@ Derzeit unterstützte Tabellen sind:
 
 * Schaltet die Tabellennavigation ein und aus (nicht zugeordnet).
 
+## Änderungen in 2.2.1
+
+* Ein Fehler in einigen Word- und Outlook-Dokumenten wurde behoben
+
+## Änderungen in 2.2
+
+* Aussehen der Dokumentation über die Erweiterungsvorlage aktualisiert
+* Erste übersetzte Version
+
 ## Änderungen in 2.1.1
 
 * Neuer Autor in Manifest und Dokumentation
@@ -28,11 +37,11 @@ Derzeit unterstützte Tabellen sind:
 ## Änderungen in 2.0
 
 * Benötigt NVDA 2019.3 oder neuer.
-* Verschiedene Zusatzmeldungen übersetzbar gemacht.
+* Verschiedene Meldungen der Erweiterung übersetzbar gemacht.
 
 ## Änderungen in 1.2
 
-* Interne Änderungen zur Unterstützung zukünftiger NVDA-Releases.
+* Interne Änderungen zur Unterstützung zukünftiger NVDA-Versionen.
 
 ## Änderungen in 1.1
 

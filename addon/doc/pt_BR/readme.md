@@ -17,6 +17,15 @@ As tabelas atualmente suportadas são:
 
 * Liga e desliga a camada de navegação em tabelas (não-atribuído).
 
+## Changes for 2.2.1
+
+* Fixed an error in some type of documents including Word and Outlook
+
+## Changes for 2.2
+
+* Update documentation style from addons template
+* First translated version
+
 ## Changes for 2.1.1
 
 * New author in manifest and documentation

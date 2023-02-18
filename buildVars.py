@@ -19,7 +19,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description" : _("""Allows using just arrow keys to navigate between table cells via a dedicated layer."""),
 	# version
-	"addon_version" : "2.1.1",
+	"addon_version" : "2.4",
 	# Author(s)
 	"addon_author" : u"Corentin Bacqué-Cazenave <corentin@progaccess.net>, Joseph Lee <joseph.lee22590@gmail.com>",
 	# URL for the add-on documentation support
@@ -29,7 +29,7 @@ addon_info = {
 	# Minimum NVDA version supported
 	"addon_minimumNVDAVersion" : "2019.3.0",
 	# Last NVDA version supported/tested
-	"addon_lastTestedNVDAVersion" : "2021.1.0",
+	"addon_lastTestedNVDAVersion" : "2023.1.0",
 	# Add-on update channel (default is stable)
 	"addon_updateChannel" : None,
 }
@@ -39,7 +39,7 @@ import os.path
 
 # Define the python files that are the sources of your add-on.
 # You can use glob expressions here, they will be expanded.
-pythonSources = [os.path.join("addon", "globalPlugins", "*.py")]
+pythonSources = [os.path.join("addon", "globalPlugins", "easyTableNavigator", "*.py")]
 
 # Files that contain strings for translation. Usually your python sources
 i18nSources = pythonSources + ["buildVars.py"]

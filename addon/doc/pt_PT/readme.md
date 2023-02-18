@@ -17,6 +17,15 @@ As tabelas actualmente suportadas são:
 
 * Alternar a activação ou desactivação do extra (não atribuída).
 
+## Alterações para 2.2.1
+
+* Corrigido um erro em alguns tipos de documentos, incluindo Word e Outlook
+
+## Mudanças para 2.2
+
+* Actualização do estilo de documentação a partir do modelo de addons
+* Primeira versão traduzida
+
 ## Alterações para 2.1.1
 
 * Novo autor em manifesto e documentação

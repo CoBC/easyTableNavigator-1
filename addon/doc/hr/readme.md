@@ -17,6 +17,16 @@ Trenutačno podržane tablice su:
 
 * Uključuje i isključuje kretanje po tablici (nedodijeljeno).
 
+## Izmjene u verziji 2.2.1
+
+* Ispravljena je greška u nekim vrstama dokumenata uključujući Word i
+  Outlook
+
+## Izmjene u verziji 2.2
+
+* Aktualiziran je stil dokumentacije iz predloška dodataka
+* Prva prevedena verzija
+
 ## Izmjene u verziji 2.1.1
 
 * Novi autor u manifestu i dokumentaciji

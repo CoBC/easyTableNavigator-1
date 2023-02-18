@@ -17,6 +17,16 @@ Taulukoita tuetaan tällä hetkellä:
 
 * Ottaa käyttöön tai poistaa käytöstä komentokerroksen (ei määritetty)
 
+## Muutokset versiossa 2.2.1
+
+* Korjattu virhe  määrätyn tyyppisissä asiakirjoissa, Word ja Outlook mukaan
+  lukien
+
+## Muutokset versiossa 2.2
+
+* Dokumentaation tyyli päivitetty lisäosamallista
+* Ensimmäinen käännetty versio
+
 ## Muutokset versiossa 2.1.1
 
 * Uusi tekijä manifestissa ja dokumentaatiossa

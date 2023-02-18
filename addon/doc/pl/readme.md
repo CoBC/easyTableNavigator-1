@@ -1,9 +1,9 @@
 # Easy Table Navigator #
 
-* Authors: Corentin Bacqué-Cazenave, Joseph Lee
+* Autorzy: Corentin Bacqué-Cazenave, Joseph Lee
 * Pobierz [Wersja stabilna][1]
 * Pobierz [Wersja rozwojowa][2]
-* NVDA compatibility: 2019.3 to 2021.1
+* Zgodność z NVDA: od 2019.3 do 2021.1
 
 Ta wtyczka dodaje warstwę komend umożliwiających użycie klawiszy strzałek do
 nawigacji w tabeli.
@@ -17,18 +17,28 @@ Aktualnie obsługiwane tabele to:
 
 * Włącza i wyłącza nawigatora tabel (nieprzypisane).
 
-## Changes for 2.1.1
+## Zmiany w wersji 2.2.1
 
-* New author in manifest and documentation
+* Naprawiono błąd w niektórych typach dokumentów, w tym w programach Word i
+  Outlook
 
-## Changes for 2.1
+## Zmiany w wersji 2.2
 
-* Compatibility with NVDA 2021.1
+* Aktualizowanie stylu dokumentacji z szablonu dodatków
+* Pierwsza przetłumaczona wersja
+
+## Zmiany w wersji 2.1.1
+
+* Nowy autor w manifeście i dokumentacji
+
+## Zmiany w wersji 2.1
+
+* Kompatybilność z NVDA 2021.1
 
 ## Zmiany dla wersji 2.0
 
 * Wymaga wersji NVDA 2019.3 i nowsze.
-* różne komunikaty dodatku teraz można tłumaczyć na języki narodowe.
+* Od teraz różne komunikaty dodatku są przetłumaczone.
 
 ## Zmiany dla wersji 1.2
 
