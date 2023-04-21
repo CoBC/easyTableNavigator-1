@@ -55,6 +55,6 @@ Trenutačno podržane tablice su:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=etn
+[1]: https://www.nvaccess.org/addonStore/legacy?file=etn
 
-[2]: https://addons.nvda-project.org/files/get.php?file=etn-dev
+[2]: https://www.nvaccess.org/addonStore/legacy?file=etn-dev
