@@ -3,9 +3,20 @@
 * 作者： Corentin Bacqué-Cazenave, Joseph Lee
 * 下载 [稳定版][1]
 * 下载 [开发板][2]
-* NVDA兼容版本： 2019.3 到 2021.1
+* NVDA compatibility: 2019.3 and beyond
 
-这个插件添加了一个手势，可以实现仅使用光标键的简易表格导航。
+This plugin adds a layer command to use simplified key combination to
+navigate table cells.  When the layered commands are enabled, you can
+perform the following actions:
+
+* Navigate to the previous or next cell horizontally or vertically using
+  arrow keys
+* Navigate to the first or last cell of the row or the column using
+  control+arrow keys or Home, End, PageUp and PageDown
+* Read the whole row or column without moving the system caret using
+  windows+leftArrow / windows+upArrow
+* Read the row or column starting from the current cell using
+  windows+rightArrow / windows+downArrow
 
 目前支持的表格有：
 
@@ -15,6 +26,37 @@
 ## 快捷键
 
 * 开关简易导航模式（未分配），开启后，您可以使用四个光标键进行表格导航。
+
+## Changes for 2.4
+
+For this release, many thanks goes to Cyrille Bougot for his work.
+
+* Table navigation fixed in MS Word
+* Introduce new commands following changes in NVDA 2022.2 and 2022.4
+
+    * home/end/pgUp/pgDown to jump to start/end of row/column
+    * control+left/right/up/downArrow to jump to start/end of row/column
+      (alternative shortcut key for the same result)
+    * NVDA+left/up to read the whole row/column starting from the first cell
+      without moving the current position of the cursor
+    * NVDA+right/down for sayAll in row/column, i.e. read the cells of the
+      current row/column, starting from the current cell and moving the
+      cursor's position while reading until the last cell of the row/column.
+
+* Remaped some keys to avoid conflicts:
+
+    * NVDA+upArrow/leftArrow becomes windows+upArrow/leftArrow (to read full
+      column/row)
+    * NVDA+downArrow/rightArrow becomes windows+downArrow/rightArrow (say
+      all in column/row)
+
+* Compatibility with NVDA 2023.1
+
+## Changes for 2.3
+
+* It is now possible to disable table navigation layer from everywhere
+* Compatibility with NVDA 2022.1
+* Fix error when reloading the addon
 
 ## 版本 2.2.1
 
