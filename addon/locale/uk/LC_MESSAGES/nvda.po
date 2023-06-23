@@ -1,0 +1,47 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-06-12 11:08+0300\n"
+"PO-Revision-Date: 2023-06-12 11:13+0300\n"
+"Last-Translator: Heorhii <nvda.translation.uk@gmail.com>\n"
+"Language-Team: \n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.1\n"
+"X-Poedit-Basepath: ../../../globalPlugins\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. Translators: input help mode message for Table Navigator toggle command.
+msgid ""
+"Toggles table navigation layer on or off. When active, arrow keys can be "
+"used to navigate between cells"
+msgstr ""
+"Вмикає або вимикає шар команд навігації по таблиці. Якщо увімкнено, для "
+"переходу між комірками можна використовувати клавіші зі стрілками"
+
+#. Translators: command category for the add-on.
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Easy Table Navigator"
+msgstr "Простий навігатор таблиці"
+
+#. Translators: presented when a user is not in a table.
+msgid "Not in a table"
+msgstr "Не в таблиці"
+
+#. Translators: presented when table navigator layer is on.
+msgid "Table navigator on"
+msgstr "Навігатор по таблиці ввімкнено"
+
+#. Translators: presented when table navigator layer is off.
+msgid "Table navigator off"
+msgstr "Навігатор по таблиці вимкнено"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Allows using just arrow keys to navigate between table cells via a dedicated "
+"layer."
+msgstr ""
