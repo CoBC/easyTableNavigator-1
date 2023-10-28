@@ -15,6 +15,7 @@ from . import compa
 import controlTypes
 import ui
 import scriptHandler
+from comtypes import COMError
 import addonHandler
 addonHandler.initTranslation()
 controlTypes = compa.convertControlTypes(controlTypes)
