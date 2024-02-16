@@ -1,6 +1,6 @@
 # Navegador fácil em Tabelas #
 
-* Autores: Corentin Bacqué-Cazenave, Joseph Lee
+* Authors: Corentin Bacqué-Cazenave, Joseph Lee
 * Baixar [Versão estável][1]
 * Baixar [Versão de desenvolvimento][2]
 * NVDA compatibility: 2019.3 and beyond

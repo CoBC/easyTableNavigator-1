@@ -1,6 +1,6 @@
 # Lakša navigacija kroz tabele  #
 
-* Autori: Corentin Bacqué-Cazenave, Joseph Lee
+* Authors: Corentin Bacqué-Cazenave, Joseph Lee
 * Preuzmi [stabilnu verziju ][1]
 * Preuzmi [verziju u razvoju ][2]
 * NVDA compatibility: 2019.3 and beyond

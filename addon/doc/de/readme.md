@@ -1,6 +1,6 @@
 # Einfacher Tabellen-Navigator #
 
-* Autoren: Corentin Bacqué-Cazenave und Joseph Lee
+* Authors: Corentin Bacqué-Cazenave, Joseph Lee
 * [Stabile Version herunterladen][1]
 * [Entwicklerversion herunterladen][2]
 * NVDA-Kompatibilität: 2019.3 und neuer

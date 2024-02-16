@@ -1,6 +1,6 @@
 # Easy Table Navigator #
 
-* Autores: Corentin Bacqué-Cazenave, Joseph Lee
+* Authors: Corentin Bacqué-Cazenave, Joseph Lee
 * Descargar [versión estable][1]
 * Descargar [versión de desenvolvemento][2]
 * NVDA compatibility: 2019.3 and beyond

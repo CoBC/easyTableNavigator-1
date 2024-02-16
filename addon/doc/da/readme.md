@@ -1,6 +1,6 @@
 # Nem Tabelnavigation #
 
-* Forfattere: Corentin Bacqué-Cazenave, Joseph Lee
+* Authors: Corentin Bacqué-Cazenave, Joseph Lee
 * Download [stabil version][1]
 * Download [udviklingsversion][2]
 * NVDA compatibility: 2019.3 and beyond

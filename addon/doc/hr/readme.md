@@ -1,6 +1,6 @@
 # Jednostavno kretanje po tablici (Easy Table Navigator) #
 
-* Autori: Corentin Bacqué-Cazenave, Joseph Lee
+* Authors: Corentin Bacqué-Cazenave, Joseph Lee
 * Preuzmi [stabilnu verziju][1]
 * Preuzmi [razvojnu verziju][2]
 * NVDA kompatibilnost: 2019.3 i novije verzije

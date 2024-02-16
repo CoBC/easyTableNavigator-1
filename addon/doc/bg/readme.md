@@ -1,6 +1,6 @@
 # Улеснена навигация в таблиците (Easy Table Navigator) #
 
-* Автори: Corentin Bacqué-Cazenave, Joseph Lee
+* Authors: Corentin Bacqué-Cazenave, Joseph Lee
 * Изтегляне на [стабилна версия][1]
 * Изтегляне на [тестова версия][2]
 * Съвместимост с NVDA: от 2019.3 и по-нови версии

@@ -1,6 +1,6 @@
 # Easy Table Navigator-简易表格导航器 #
 
-* 作者： Corentin Bacqué-Cazenave, Joseph Lee
+* Authors: Corentin Bacqué-Cazenave, Joseph Lee
 * 下载 [稳定版][1]
 * 下载 [开发板][2]
 * NVDA compatibility: 2019.3 and beyond

@@ -1,6 +1,6 @@
 # Helppo taulukossa liikkuminen #
 
-* Tekijät: Corentin Bacqué-Cazenave, Joseph Lee
+* Authors: Corentin Bacqué-Cazenave, Joseph Lee
 * Lataa [vakaa versio][1]
 * Lataa [kehitysversio][2]
 * Yhteensopivuus: NVDA 2019.3 ja sitä uudemmat
