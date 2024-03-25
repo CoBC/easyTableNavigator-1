@@ -21,6 +21,10 @@ Currently supported tables are:
 
 * Toggles table navigator layer on and off (unassigned).
 
+## Changes for 2.5
+
+* Compatibility with NVDA 2024.1
+
 ## Changes for 2.4
 
 For this release, many thanks goes to Cyrille Bougot for his work.
