@@ -1,22 +1,22 @@
-# Easy Table Navigator #
+# Простой Навигатор по Таблицам #
 
 * Авторы: Corentin Bacqué-Cazenave, Joseph Lee
 * Загрузить [стабильную версию][1]
 * Загрузить [разрабатываемую версию][2]
-* NVDA compatibility: 2019.3 and beyond
+* Совместимость с NVDA: 2019.3 и выше
 
-This plugin adds a layer command to use simplified key combination to
-navigate table cells.  When the layered commands are enabled, you can
-perform the following actions:
+Этот плагин добавляет многоуровневую команду, позволяющую использовать
+упрощённую комбинацию клавиш для навигации по ячейкам таблицы.  Когда
+многоуровневые команды включены, вы можете выполнять следующие действия:
 
-* Navigate to the previous or next cell horizontally or vertically using
-  arrow keys
-* Navigate to the first or last cell of the row or the column using
-  control+arrow keys or Home, End, PageUp and PageDown
-* Read the whole row or column without moving the system caret using
-  windows+leftArrow / windows+upArrow
-* Read the row or column starting from the current cell using
-  windows+rightArrow / windows+downArrow
+* Переходить к предыдущей или следующей ячейке по горизонтали или вертикали
+  с помощью клавиш стрелок
+* Переходить к первой или последней ячейке строки или столбца, используя
+  клавиши control+стрелки или Home, End, PageUp и PageDown
+* Прочитать всю строку или столбец целиком, не перемещая системную каретку,
+  используя windows+стрелку влево / windows+стрелку вверх
+* Прочитать строку или столбец, начиная с текущей ячейки, используя
+  windows+стрелку вправо / windows+стрелку вниз
 
 В настоящее время поддерживаются таблицы для:
 
@@ -29,60 +29,63 @@ perform the following actions:
 
 ## Изменения для 2.4
 
-For this release, many thanks goes to Cyrille Bougot for his work.
+За этот выпуск мы выражаем огромную благодарность Cyrille Bougot за его
+работу.
 
-* Table navigation fixed in MS Word
-* Introduce new commands following changes in NVDA 2022.2 and 2022.4
+* Исправлена навигация по таблицам в MS Word
+* Ввод новых команд в соответствии с изменениями в NVDA 2022.2 и 2022.4
 
-    * home/end/pgUp/pgDown to jump to start/end of row/column
-    * control+left/right/up/downArrow to jump to start/end of row/column
-      (alternative shortcut key for the same result)
-    * NVDA+left/up to read the whole row/column starting from the first cell
-      without moving the current position of the cursor
-    * NVDA+right/down for sayAll in row/column, i.e. read the cells of the
-      current row/column, starting from the current cell and moving the
-      cursor's position while reading until the last cell of the row/column.
+    * home/end/pgUp/pgDown для перехода к началу/концу строки/столбца
+    * control+стрелка влево/вправо/вверх/вниз для перехода к началу/концу
+      строки/столбца (альтернативное сочетание клавиш для достижения того же
+      результата)
+    * NVDA+стрелка влево/вверх для чтения всей строки/столбца, начиная с
+      первой ячейки, не перемещая текущее положение курсора
+    * NVDA+стрелка вправо/вниз для чтения всего в строке/столбце,
+      т.е. считывать ячейки текущей строки/столбца, начиная с текущей ячейки
+      и перемещая положение курсора при чтении до последней ячейки
+      строки/столбца.
 
-* Remaped some keys to avoid conflicts:
+* Переназначены некоторые клавиши, чтобы избежать конфликты:
 
-    * NVDA+upArrow/leftArrow becomes windows+upArrow/leftArrow (to read full
-      column/row)
-    * NVDA+downArrow/rightArrow becomes windows+downArrow/rightArrow (say
-      all in column/row)
+    * NVDA+Стрелка вверх/Стрелка влево стало windows+Стрелка вверх/Стрелка
+      влево (для чтения всего столбца/строки)
+    * NVDA+Стрелка вниз/Стрелка вправо стало windows+Стрелка вниз/Стрелка
+      вправо (прочитать всё в столбце/строке)
 
-* Compatibility with NVDA 2023.1
+* Совместимость с NVDA 2023.1
 
 ## Изменения для 2.3
 
-* It is now possible to disable table navigation layer from everywhere
-* Compatibility with NVDA 2022.1
-* Fix error when reloading the addon
+* Теперь можно отключить уровень навигации по таблицам из любого места
+* Совместимость с NVDA 2022.1
+* Исправлена ошибка при перезагрузке дополнения
 
 ## Изменения для 2.2.1
 
-* Fixed an error in some type of documents including Word and Outlook
+* Исправлена ошибка в некоторых типах документов, включая Word и Outlook
 
 ## Изменения для 2.2
 
-* Update documentation style from addons template
-* First translated version
+* Обновлён стиль документации на основе шаблона дополнений
+* Первая переведённая версия
 
 ## Изменения для 2.1.1
 
-* New author in manifest and documentation
+* Новый автор в манифесте и документации
 
 ## Изменения для 2.1
 
-* Compatibility with NVDA 2021.1
+* Совместимость с NVDA 2021.1
 
 ## Изменения для 2.0
 
-* Requires NVDA 2019.3 or later.
-* Made various add-on messages translatable.
+* Требуется NVDA 2019.3 или выше.
+* Сделаны доступными для перевода различные сообщения дополнения.
 
 ## Изменения для 1.2
 
-* Internal changes to support future NVDA releases.
+* Внутренние изменения для поддержки будущих выпусков NVDA.
 
 ## Изменения для 1.1
 
