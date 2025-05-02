@@ -1,11 +1,11 @@
-# Kolay Tablo Gezgini #
+# Kolay Tablo Dolaşımı #
 
 * Yazarlar: Corentin Bacqué-Cazenave, Joseph Lee
 * [Kararlı sürüm][1]ü indir
 * [Geliştirme sürümü][2]nü indir
 * NVDA uyumluluğu: 2019.3 ve sonrası
 
-Bu eklenti, tablo hücrelerinde gezinmek için basitleştirilmiş tuş
+Bu eklenti, tablo hücrelerinde dolaşmak için basitleştirilmiş tuş
 kombinasyonunu kullanmak üzere bir katman komutu ekler. Katmanlı komutlar
 etkinleştirildiğinde, aşağıdaki eylemleri gerçekleştirebilirsiniz:
 
@@ -25,13 +25,13 @@ etkinleştirildiğinde, aşağıdaki eylemleri gerçekleştirebilirsiniz:
 
 ## Komutlar
 
-* Tablo gezgini katmanını açar ve kapatır (atanmamış).
+* Tablo dolaşımı katmanını açar ve kapatır (atanmamış).
 
 ## 2.4 için değişiklikler
 
 Bu sürüm için, çalışmalarından dolayı Cyrille Bougot'ya çok teşekkürler.
 
-* Tablo navigasyonu MS Word'de düzeltildi
+* Tablo dolaşımı MS Word'de düzeltildi
 * NVDA 2022.2 ve 2022.4'teki değişiklikleri takiben yeni komutlar tanıtıldı
 
     * başlangıç ​​noktasına atlamak için home/end/pgUp/pgDown/satır/sütun
@@ -56,7 +56,7 @@ Bu sürüm için, çalışmalarından dolayı Cyrille Bougot'ya çok teşekkürl
 
 ## 2.3 için değişiklikler
 
-* Tablo gezinme katmanını her yerden devre dışı bırakmak artık mümkün
+* Tablo dolaşımı katmanını her yerden devre dışı bırakmak artık mümkün
 * Artık NVDA 2022.1 ile uyumlu
 * Eklentiyi yeniden yüklerken hata düzeltildi
 
