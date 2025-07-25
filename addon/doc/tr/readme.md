@@ -5,7 +5,7 @@
 * [Geliştirme sürümü][2]nü indir
 * NVDA uyumluluğu: 2019.3 ve sonrası
 
-Bu eklenti, tablo hücrelerinde dolaşmak için basitleştirilmiş tuş
+Bu eklenti, tablo hücrelerinde gezinmek için basitleştirilmiş tuş
 kombinasyonunu kullanmak üzere bir katman komutu ekler. Katmanlı komutlar
 etkinleştirildiğinde, aşağıdaki eylemleri gerçekleştirebilirsiniz:
 
@@ -57,6 +57,39 @@ Bu sürüm için, çalışmalarından dolayı Cyrille Bougot'ya çok teşekkürl
 ## 2.3 için değişiklikler
 
 * Tablo dolaşımı katmanını her yerden devre dışı bırakmak artık mümkün
+* Artık NVDA 2022.1 ile uyumlu
+* Eklentiyi yeniden yüklerken hata düzeltildi
+
+## 2.4 için değişiklikler
+
+Bu sürüm için, çalışmalarından dolayı Cyrille Bougot'ya çok teşekkürler.
+
+* Tablo navigasyonu MS Word'de düzeltildi
+* NVDA 2022.2 ve 2022.4'teki değişiklikleri takiben yeni komutlar tanıtıldı
+
+    * başlangıç ​​noktasına atlamak için home/end/pgUp/pgDown/satır/sütun
+      sonu
+    * satır/sütun başına/sonuna atlamak için control+sol/sağ/yukarı/aşağıOk
+      (aynı sonuç için alternatif kısayol tuşu)
+    * İmlecin mevcut konumunu hareket ettirmeden ilk hücreden başlayarak tüm
+      satırı/sütun okumak için NVDA+sol/yukarı
+    * NVDA + sağ / aşağı diyelim ki Satırda / sütunda tümü, yani geçerli
+      satırın / sütunun hücrelerini okuyun, geçerli hücreden başlayın ve
+      satırın / sütunun son hücresine kadar okurken imlecin konumunu hareket
+      ettirin.
+
+* Çakışmaları önlemek için bazı tuşlar yeniden eşlendi:
+
+    * NVDA+yukarı ok/sol ok, windows+yukarı ok/sol ok olur (tam sütun/satır
+      okumak için)
+    * NVDA+aşağı ok/sağ Ok, windows+aşağı ok/sağ Ok olur (tümünü sütun/satır
+      olarak söyleyin)
+
+* Artık NVDA 2023.1 ile uyumlu
+
+## 2.3 için değişiklikler
+
+* Tablo gezinme katmanını her yerden devre dışı bırakmak artık mümkün
 * Artık NVDA 2022.1 ile uyumlu
 * Eklentiyi yeniden yüklerken hata düzeltildi
 

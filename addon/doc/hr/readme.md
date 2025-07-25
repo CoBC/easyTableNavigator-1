@@ -1,6 +1,6 @@
 # Jednostavno kretanje po tablici (Easy Table Navigator) #
 
-* Autori: Corentin Bacqué-Cazenave, Joseph Lee
+* Authors: Corentin Bacqué-Cazenave, Joseph Lee
 * Preuzmi [stabilnu verziju][1]
 * Preuzmi [razvojnu verziju][2]
 * NVDA kompatibilnost: 2019.3 i novije verzije
@@ -50,7 +50,7 @@ For this release, many thanks goes to Cyrille Bougot for his work.
     * NVDA+downArrow/rightArrow becomes windows+downArrow/rightArrow (say
       all in column/row)
 
-* Kompatibilnost s NVDA verzijom 2023.1
+* Kompatibilnost s NVDA verzijom 2023.1.
 
 ## Promjene u verziji 2.3
 
