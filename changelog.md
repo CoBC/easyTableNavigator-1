@@ -1,4 +1,4 @@
-## Changes for 2.6
+## Changes for 2.7
 
-* Compatibility with NVDA 2025.1
+* Compatibility with NVDA 2026.1
 
