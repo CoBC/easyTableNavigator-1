@@ -21,7 +21,7 @@ Currently supported tables are:
 
 * Toggles table navigator layer on and off (unassigned).
 
-## Changes for 2.7
+## Changes for 2.7 and 2.7.1
 
 * Compatibility with NVDA 2026.1
 
