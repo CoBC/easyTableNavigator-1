@@ -16,6 +16,7 @@ Currently supported tables are:
 
 * Browse mode (Internet Explorer, Firefox, etc.).
 * Microsoft Word.
+* List views
 
 ## Commands
 

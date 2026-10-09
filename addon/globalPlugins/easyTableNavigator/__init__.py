@@ -10,6 +10,7 @@ import api
 import config
 import documentBase
 from NVDAObjects.window import winword
+from NVDAObjects.behaviors import RowWithFakeNavigation
 import textInfos
 from . import compa
 import controlTypes
@@ -69,6 +70,8 @@ def tableNavAvailable(obj=None):
 		except KeyError:
 			return False
 		return testFunc(focus)
+	elif isinstance(focus, RowWithFakeNavigation):
+		return True
 	elif (
 		isinstance(focus.treeInterceptor, documentBase.DocumentWithTableNavigation)
 		and not focus.treeInterceptor.passThrough
@@ -159,6 +162,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			and not focus.treeInterceptor.passThrough
 		):
 			getattr(focus.treeInterceptor, f'script_{move}')(gesture)
+		elif isinstance(focus, RowWithFakeNavigation):
+			scriptName = f'script_moveTo{move[0].upper() + move[1:]}'
+			try:
+				navScript = getattr(focus, scriptName)
+			except AttributeError:
+				# Translators: Reported when using say all row/column or speak row/column commands in list view
+				ui.message(_("Unsupported command in list views"))
+				return
+			# Unresolved bug: executing the script for vertical navigation (next/previous/first/last cell) in detailed
+			# view of task manager (W11) cause a 2.5 sec freeze, but finally succeeds.
+			# This bug does not occur in other list views.
+			navScript(gesture)
 		else:
 			getattr(focus, f'script_{move}')(gesture)
 
