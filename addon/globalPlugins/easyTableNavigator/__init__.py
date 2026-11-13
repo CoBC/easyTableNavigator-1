@@ -20,6 +20,8 @@ import addonHandler
 addonHandler.initTranslation()
 controlTypes = compa.convertControlTypes(controlTypes)
 
+_TABLE_NAV_ERRORS = (LookupError, WindowsError, COMError, RuntimeError, NotImplementedError)
+
 # Keep a tuple of candidate tree interceptors and object types handy.
 TNDocObjs=(
 	(winword.WordDocument),
@@ -59,8 +61,20 @@ TNDocObjTesters={
 	"_WwG":_MSWordTableNavAvailable,
 }
 
+def _getActiveTableTreeInterceptor(focus):
+	"""Return the ready table tree interceptor that currently owns input."""
+	treeInterceptor = getattr(focus, "treeInterceptor", None)
+	if (
+		isinstance(treeInterceptor, documentBase.DocumentWithTableNavigation)
+		and getattr(treeInterceptor, "isReady", False)
+		and not treeInterceptor.passThrough
+	):
+		return treeInterceptor
+	return None
+
 # Actual table navigator tester (to be called throughout the life of the plugin).
 def tableNavAvailable(obj=None):
+	"""Return whether table navigation is available for the focused object."""
 	# Depending on object type, figure out if we're in a table.
 	focus = api.getFocusObject() if obj is None else obj
 	if isinstance(focus, TNDocObjs):
@@ -68,15 +82,23 @@ def tableNavAvailable(obj=None):
 			testFunc = TNDocObjTesters[focus.windowClassName]
 		except KeyError:
 			return False
-		return testFunc(focus)
-	elif (
-		isinstance(focus.treeInterceptor, documentBase.DocumentWithTableNavigation)
-		and not focus.treeInterceptor.passThrough
-	):
 		try:
-			focus.treeInterceptor._getTableCellCoords(focus.treeInterceptor.selection)
+			return testFunc(focus)
+		except _TABLE_NAV_ERRORS:
+			return False
+	treeInterceptor = _getActiveTableTreeInterceptor(focus)
+	if treeInterceptor is not None:
+		try:
+			treeInterceptor._getTableCellCoords(treeInterceptor.selection)
 			return True
-		except (LookupError, WindowsError):
+		except _TABLE_NAV_ERRORS:
+			return False
+	markdownTableNavAvailable = getattr(focus, "isTableNavigationAvailable", None)
+	if callable(markdownTableNavAvailable):
+		try:
+			if markdownTableNavAvailable():
+				return True
+		except _TABLE_NAV_ERRORS:
 			return False
 	return False
 
@@ -93,8 +115,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			else:
 				self.clearGestureBindings()
 				self.bindGestures(self.__gestures)
-		except WindowsError:
-			pass
+		except _TABLE_NAV_ERRORS:
+			self.clearGestureBindings()
+			self.bindGestures(self.__gestures)
 		nextHandler()
 
 	@scriptHandler.script(
@@ -153,12 +176,26 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Table navigation commands.
 	
 	def tableNavigationHelper(self, gesture, move):
+		"""Run a table command on the active tree interceptor or focus object."""
 		focus = api.getFocusObject()
-		if (
-			isinstance(focus.treeInterceptor, documentBase.DocumentWithTableNavigation)
-			and not focus.treeInterceptor.passThrough
-		):
-			getattr(focus.treeInterceptor, f'script_{move}')(gesture)
+		treeInterceptor = _getActiveTableTreeInterceptor(focus)
+		markdownTableNavAvailable = getattr(focus, "isTableNavigationAvailable", None)
+		if treeInterceptor is None and not isinstance(focus, TNDocObjs) and callable(markdownTableNavAvailable):
+			try:
+				markdownTableActive = markdownTableNavAvailable()
+			except _TABLE_NAV_ERRORS:
+				markdownTableActive = False
+			if not markdownTableActive:
+				self.tableNav = False
+				self.clearGestureBindings()
+				self.bindGestures(self.__gestures)
+				try:
+					gesture.send()
+				except NotImplementedError:
+					pass
+				return
+		if treeInterceptor is not None:
+			getattr(treeInterceptor, f'script_{move}')(gesture)
 		else:
 			getattr(focus, f'script_{move}')(gesture)
 
