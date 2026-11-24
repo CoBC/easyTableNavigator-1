@@ -17,6 +17,7 @@ Currently supported tables are:
 * Browse mode (Internet Explorer, Firefox, etc.).
 * Microsoft Word.
 * List views
+* Markdown tables when the [Markdown Navigator](https://github.com/cary-rowen/markdownNavigator) add-on's browse mode is active.
 
 ## Commands
 
